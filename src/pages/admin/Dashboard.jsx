@@ -8,15 +8,15 @@ export default function Dashboard() {
       <div className="form-card">
         <h2 style={{textAlign:"center"}}>Admin Dashboard</h2>
         <div className="admin-actions">
-          <Link className="navbar__link" to="/admin/products">
+          <Link className="navbar__link" to="/admin/products" style={{margin:"40px"}} > 
             Manage Products
           </Link>
-          <Link className="navbar__link" to="/admin/orders">
+          <Link className="navbar__link" to="/admin/orders" style={{margin:"40px"}}>
             Manage Orders
           </Link>
-          <button className="secondary" onClick={adminLogout}>
+          {/* <button className="secondary" onClick={adminLogout}>
             Logout
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
