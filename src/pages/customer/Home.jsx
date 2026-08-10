@@ -15,7 +15,7 @@ export default function Home() {
         {products.map((p) => (
           <Link key={p.id} to={`/product/${p.id}`} className="product-card">
             <img className="product-card__image" src={p.image_url} alt={p.name} />
-            <div>
+            <div className="product-card__info">
               <h4>{p.name}</h4>
               <p>₹{p.price}</p>
             </div>

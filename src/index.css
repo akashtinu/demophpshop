@@ -200,6 +200,15 @@ body {
   object-fit: cover;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
 }
+.product-detail__info{
+  text-align: center;
+  display: grid;
+  gap: 12px;
+  align-items: center;
+}
+.product-card__info{
+  text-align: center;
+}
 
 .order-card,
 .table-wrapper,
@@ -213,6 +222,8 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.18);
   background: var(--surface-strong);
   box-shadow: 0 14px 28px rgba(15, 23, 42, 0.04);
+  display: flex;
+  gap: 16px;
 }
 
 .table-wrapper {
@@ -296,7 +307,8 @@ button.primary {
 
 button.secondary {
   background: rgba(148, 163, 184, 0.18);
-  color: var(--text-h);
+  /* color: var(--text-h); */
+  background-color: red;
 }
 
 .page-link {

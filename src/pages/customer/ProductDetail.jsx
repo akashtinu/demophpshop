@@ -17,7 +17,7 @@ export default function ProductDetail() {
     <div className="page">
       <div className="product-detail form-card">
         <img className="product-detail__image" src={product.image_url} alt={product.name} />
-        <div>
+        <div className="product-detail__info">
           <h2>{product.name}</h2>
           <p>{product.description}</p>
           <p>₹{product.price}</p>

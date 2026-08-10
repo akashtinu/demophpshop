@@ -51,8 +51,8 @@ export default function ManageProducts() {
 
       <div className="form-card table-wrapper">
         <table>
-          <thead>
-            <tr><th>Name</th><th>Price</th><th>Size</th><th>Actions</th></tr>
+          <thead >
+            <tr><th>Name</th><th>Price</th><th>Size</th><th style={{textAlign:"center"}}>Actions</th></tr>
           </thead>
           <tbody>
             {products.map((p) => (
@@ -61,7 +61,7 @@ export default function ManageProducts() {
                 <td>₹{p.price}</td>
                 <td>{p.size}</td>
                 <td>
-                  <button style={{backgroundColor:"yellow"}} className="secondary" onClick={() => handleEdit(p)}>Edit</button>
+                  <button style={{backgroundColor:"orange"}} className="secondary" onClick={() => handleEdit(p)}>Edit</button>
                   <button className="secondary" onClick={() => handleDelete(p.id)}>Delete</button>
                 </td>
               </tr>
