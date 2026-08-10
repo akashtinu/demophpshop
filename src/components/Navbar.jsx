@@ -46,9 +46,13 @@ export default function Navbar() {
 
       <div className="navbar__links">
   {admin ? (
+    <>
+    <Link className="navbar__link " to="/admin/dashboard">
+      Dashboard
+    </Link>
     <button className="navbar__button" onClick={adminLogout}>
       Logout
-    </button>
+    </button></>
   ) : (
     <>
       <Link className="navbar__link" to="/">

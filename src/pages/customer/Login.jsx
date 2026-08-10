@@ -24,7 +24,7 @@ export default function Login() {
   return (
     <div className="page">
       <div className="form-card">
-        <h2>Login</h2>
+        <h2 style={{ textAlign: "center" }}>Login</h2>
         <form onSubmit={handleSubmit}>
           <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
           <input name="password" type="password" placeholder="Password" onChange={handleChange} required />

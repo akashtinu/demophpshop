@@ -21,7 +21,7 @@ export default function Signup() {
   return (
     <div className="page">
       <div className="form-card">
-        <h2>Signup</h2>
+        <h2 style={{ textAlign: "center" }}>Signup</h2>
         <form onSubmit={handleSubmit}>
           <input name="name" placeholder="Name" onChange={handleChange} required />
           <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
