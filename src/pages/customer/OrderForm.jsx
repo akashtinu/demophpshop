@@ -34,7 +34,7 @@ export default function OrderForm() {
     <div className="page">
       <div className="form-card">
         <h2>Place Order</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
           <input name="quantity" type="number" min="1" value={form.quantity} onChange={handleChange} required />
           <textarea name="address" placeholder="Delivery Address" onChange={handleChange} required />
           <input name="phone" placeholder="Phone" value={form.phone} onChange={handleChange} required />

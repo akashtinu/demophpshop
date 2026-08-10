@@ -13,7 +13,7 @@ export default function MyOrders() {
   return (
     <div className="page">
       <div className="form-card">
-        <h2>My Orders</h2>
+        <h2 style={{textAlign:"center"}}>My Orders</h2>
         <div className="order-list">
           {orders.map((o) => (
             <div key={o.id} className="order-card">

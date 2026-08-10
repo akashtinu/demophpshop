@@ -38,7 +38,7 @@ export default function ManageProducts() {
   return (
     <div className="page">
       <div className="form-card">
-        <h2>Manage Products</h2>
+        <h2 style={{textAlign:"center"}}>Manage Products</h2>
         <form onSubmit={handleSubmit}>
           <input name="name" placeholder="Name" value={form.name} onChange={handleChange} required />
           <input name="description" placeholder="Description" value={form.description} onChange={handleChange} />
@@ -60,7 +60,7 @@ export default function ManageProducts() {
                 <td>{p.name}</td>
                 <td>₹{p.price}</td>
                 <td>{p.size}</td>
-                <td>
+                <td style={{display:"flex", justifyContent:"center", gap:"10px"}}>
                   <button style={{backgroundColor:"orange"}} className="secondary" onClick={() => handleEdit(p)}>Edit</button>
                   <button className="secondary" onClick={() => handleDelete(p.id)}>Delete</button>
                 </td>
